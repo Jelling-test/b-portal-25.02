@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Velkommen{% endblock %}
+
+{% block hero %}
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h1>Velkommen til Strøm Portalen</h1>
+                <p class="lead mb-4">
+                    Din nemme løsning til at købe og administrere strømpakker
+                </p>
+                <div class="mt-4">
+                    <a href="/pakker" class="btn btn-light btn-lg me-3">
+                        <i class="fas fa-box me-2"></i>Se Strømpakker
+                    </a>
+                    <a href="/login" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-sign-in-alt me-2"></i>Log ind
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block content %}
+<section class="features-section">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="feature-card card h-100">
+                <div class="card-body">
+                    <i class="fas fa-bolt mb-3"></i>
+                    <h3>Fleksible Strømpakker</h3>
+                    <p>Vælg mellem forskellige pakker der passer til dit behov</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-card card h-100">
+                <div class="card-body">
+                    <i class="fas fa-chart-line mb-3"></i>
+                    <h3>Forbrugs Overblik</h3>
+                    <p>Hold øje med dit strømforbrug i realtid</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-card card h-100">
+                <div class="card-body">
+                    <i class="fas fa-credit-card mb-3"></i>
+                    <h3>Nem Betaling</h3>
+                    <p>Sikker og hurtig betaling med flere betalingsmuligheder</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

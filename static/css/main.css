@@ -1,0 +1,159 @@
+/* Main styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #333;
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(135deg, #2b5031 0%, #3d7045 100%);
+    color: white;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* Logo styling */
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Card styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    padding: 1.25rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Button styling */
+.btn {
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #2b5031 0%, #3d7045 100%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #234127 0%, #325c38 100%);
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    border: 2px solid #2b5031;
+    color: #2b5031;
+}
+
+.btn-outline-primary:hover {
+    background: #2b5031;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Navigation styling */
+.navbar {
+    background: white !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #2b5031 !important;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #333 !important;
+    margin: 0 0.5rem;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #2b5031 !important;
+}
+
+/* Progress bar styling */
+.progress {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    height: 20px;
+    margin: 1rem 0;
+}
+
+.progress-bar {
+    background: linear-gradient(135deg, #2b5031 0%, #3d7045 100%);
+    border-radius: 10px;
+}
+
+/* Features section */
+.features-section {
+    padding: 4rem 0;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: #2b5031;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2b5031;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid #eee;
+    color: #2b5031;
+}
