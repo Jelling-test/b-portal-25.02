@@ -1,0 +1,49 @@
+# Translations template for Project.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the Project project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-02-26 07:48+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: templates/index.html:10
+msgid "Velkommen til Strøm Portalen"
+msgstr ""
+
+#: templates/index.html:12
+msgid "Din nemme løsning til at købe og administrere strømpakker"
+msgstr ""
+
+#: templates/index.html:15
+msgid "Se Strømpakker"
+msgstr ""
+
+#: templates/index.html:18
+msgid "Log ind"
+msgstr ""
+
+#: templates/index.html:37
+msgid "Fleksible Strømpakker"
+msgstr ""
+
+#: templates/index.html:38
+msgid "Vælg mellem forskellige pakker der passer til dit behov"
+msgstr ""
+
+#: templates/index.html:45
+msgid "Forbrugs Overblik"
+msgstr ""
+
+#: templates/index.html:46
+msgid "Hold øje med dit strømforbrug i realtid"
+msgstr ""

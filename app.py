@@ -1,30 +1,34 @@
-from flask import Flask, render_template
-from flask_sqlalchemy import SQLAlchemy
-from flask_login import LoginManager
-from config import Config
-from models.user import User
+from flask import Flask, render_template, session, redirect, url_for, request
+from flask_babel import Babel
 
 app = Flask(__name__)
-app.config.from_object(Config)
+app.config['SECRET_KEY'] = 'your-secret-key'
+app.config['BABEL_DEFAULT_LOCALE'] = 'da'
+app.config['BABEL_TRANSLATION_DIRECTORIES'] = 'translations'
 
-db = SQLAlchemy(app)
-login = LoginManager(app)
-login.login_view = 'auth.login'
+babel = Babel(app)
 
-# Registrer blueprints her senere
-# from app.auth import bp as auth_bp
-# app.register_blueprint(auth_bp)
+LANGUAGES = {
+    'da': {'name': 'Dansk', 'flag': 'dk.png'},
+    'en': {'name': 'English', 'flag': 'gb.png'}
+}
 
-# User loader for Flask-Login
-@login.user_loader
-def load_user(user_id):
-    # Her vil vi senere hente brugeren fra databasen
-    # For nu returnerer vi bare None, hvilket betyder at ingen er logget ind
-    return None
+def get_locale():
+    if 'language' in session:
+        return session['language']
+    return request.accept_languages.best_match(list(LANGUAGES.keys()), default='da')
+
+babel.init_app(app, locale_selector=get_locale)
+
+@app.route('/change-language/<language>')
+def change_language(language):
+    if language in LANGUAGES:
+        session['language'] = language
+    return redirect(request.referrer or url_for('index'))
 
 @app.route('/')
 def index():
-    return render_template('index.html', title='Velkommen')
+    return render_template('index.html', languages=LANGUAGES)
 
 if __name__ == '__main__':
     app.run(debug=True)

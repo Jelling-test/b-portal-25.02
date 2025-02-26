@@ -1,13 +1,16 @@
 {% extends "base.html" %}
 
-{% block title %}Velkommen{% endblock %}
+{% block title %}{{ _('Velkommen') }}{% endblock %}
 
 {% block hero %}
 <section class="hero-section">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-8 offset-md-2 text-center">
-                <h1>Velkommen til Strøm Portalen</h1>
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Jelling Camping Logo" class="hero-logo me-3">
+                    <h1>Velkommen til Strøm Portalen</h1>
+                </div>
                 <p class="lead mb-4">
                     Din nemme løsning til at købe og administrere strømpakker
                 </p>
@@ -26,6 +29,11 @@
 {% endblock %}
 
 {% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">{{ _('Velkommen til Jelling Camping Strømportal') }}</h1>
+    <p class="lead">{{ _('Her kan du administrere dine strømpakker og se dit forbrug.') }}</p>
+</div>
+
 <section class="features-section">
     <div class="row">
         <div class="col-md-4">
